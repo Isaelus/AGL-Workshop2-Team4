@@ -24,7 +24,7 @@ public class collectObjects : MonoBehaviour
         //TODO 
         //Integrate player health to check if he can eat
         // currently health is initially set to false this will be changed
-        fullHealth = false;
+        fullHealth = true;
         health = 5;
 
         
@@ -57,6 +57,13 @@ public class collectObjects : MonoBehaviour
             Destroy(collectable.gameObject);
              wingCollected = true;
 
+
+        } else if (collectable.gameObject.CompareTag("Ship")){
+
+                if(fullGas && wingCollected){
+                        //GAME FINISHED
+
+                }
 
         }
 

@@ -7,6 +7,8 @@ TagManager:
   - Gas
   - Food
   - Wing
+  - Slime
+  - Ship
   layers:
   - Default
   - TransparentFX
