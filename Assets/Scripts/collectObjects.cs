@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class collectObjects : MonoBehaviour
 {
-    private int gasCollected;
+    public float gasCollected;
    
     private bool wingCollected;
     private bool fullGas;
     private bool fullHealth;
-    private int gasNeeded;
-    private int health;
+    private float gasNeeded;
+    private float health;
 
 
     // Start is called before the first frame update
