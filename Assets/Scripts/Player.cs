@@ -7,9 +7,9 @@ public class Player : MonoBehaviour, IDamageable
     public int maxHealth = 5;
     public int currentHealth;
     public bool hitInvulnerable = false;
-    public float hitInvulDuration = 5f;
+    public float hitInvulnerableDuration = 1f;
     public bool dodgeInvulnerable = false;
-    public float dodgeInvulDuration = 2f;
+    public float dodgeInvulnerableDuration = 0.5f;
     public Collider2D hitbox;
     public HealthBar healthBar;
 
@@ -61,7 +61,7 @@ public class Player : MonoBehaviour, IDamageable
         hitInvulnerable = true;
         hitbox.enabled = false;
 
-        yield return new WaitForSeconds(hitInvulDuration);
+        yield return new WaitForSeconds(hitInvulnerableDuration);
 
         hitbox.enabled = true;
         hitInvulnerable = false;
@@ -73,7 +73,7 @@ public class Player : MonoBehaviour, IDamageable
         dodgeInvulnerable = true;
         hitbox.enabled = false;
         
-        yield return new WaitForSeconds(dodgeInvulDuration);
+        yield return new WaitForSeconds(dodgeInvulnerableDuration);
 
         dodgeInvulnerable = false;
         hitbox.enabled = true;
