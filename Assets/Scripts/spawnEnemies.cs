@@ -11,7 +11,7 @@ public class spawnEnemies : MonoBehaviour
   [SerializeField]
    private float slimeInterval = 5f;
   [SerializeField]
-   private float bossInterval = 15f;
+  // private float bossInterval = 15f;
 
 
  
@@ -19,7 +19,7 @@ public class spawnEnemies : MonoBehaviour
     void Start()
     {
        StartCoroutine(spawnEnemy(slimeInterval, slimePrefab));
-       StartCoroutine(spawnEnemy(bossInterval, bossPrefab));
+     //  StartCoroutine(spawnEnemy(bossInterval, bossPrefab));
 
 
     }
