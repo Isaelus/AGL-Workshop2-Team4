@@ -8,7 +8,8 @@ public class staticSpawn : MonoBehaviour
    private GameObject slimePrefab;
 
   [SerializeField]
-   public float slimeInterval = 6f;
+  //max enemy interval when spawning
+   public float slimeInterval;
 
 
 
@@ -16,9 +17,12 @@ public class staticSpawn : MonoBehaviour
  // Start is called before the first frame update
     void Start()
     {
-     // slimeInterval -=   GameObject.Find("player1").GetComponent<collectObjects>().gasCollected;
-       StartCoroutine(spawnEnemy(slimeInterval, slimePrefab));
-    
+
+        slimeInterval = 6f;
+        //calls to start coroutine which spawns enemy
+
+        StartCoroutine(spawnEnemy(slimeInterval, slimePrefab));
+   
 
 
     }
@@ -30,15 +34,53 @@ public class staticSpawn : MonoBehaviour
     }
 
     private IEnumerator spawnEnemy(float interval, GameObject enemy){
-     // debug.Log( "NUMBER OF GAAAAAAAAAAAAAAAAASSSSSS:  " + GameObject.Find("player1").GetComponent<collectObjects>().gasCollected); 
-//interval -= gasFromPlayer; 
+   
 yield return new WaitForSeconds(interval);
-//endless spawn
+        //I set the interval to lower if a gas tank is collected
+        // we reset back to the max interval to repeat process
+        //CHANGE MAX INTERVAL CHANGE THIS INTERVAL VALUE
+        interval = 6;
+//endless spawn at spawner position
 GameObject newEnemy = Instantiate(enemy, transform.position ,Quaternion.identity);
+        //gets and compares gas collected from object player1 (our player current name) to reduce enemy spawn rate up to -5
+        if (GameObject.Find("player1").GetComponent<collectObjects>().gasCollected == 1) {
+            interval -= 1;
+            StartCoroutine(spawnEnemy(interval, enemy));
+           
+        } else if (GameObject.Find("player1").GetComponent<collectObjects>().gasCollected == 2) {
+            interval -= 2;
+            StartCoroutine(spawnEnemy(interval, enemy));
+           
 
-StartCoroutine( spawnEnemy (interval, enemy));
+        }
+        else if (GameObject.Find("player1").GetComponent<collectObjects>().gasCollected == 3) {
+            interval -= 3;
+            StartCoroutine(spawnEnemy(interval, enemy));
+           
 
+
+        }
+        else if (GameObject.Find("player1").GetComponent<collectObjects>().gasCollected == 4)
+        {
+            interval -= 4;
+            StartCoroutine(spawnEnemy(interval, enemy));
+
+
+
+        }
+        else if (GameObject.Find("player1").GetComponent<collectObjects>().gasCollected ==5)
+        {
+            interval -= 5;
+            StartCoroutine(spawnEnemy(interval, enemy));
+
+
+
+        }
+        else
+        //normal start spawn rate when no gas is collected
+        {
+            StartCoroutine(spawnEnemy(interval, enemy));
+        }
     }
  
 }
-
