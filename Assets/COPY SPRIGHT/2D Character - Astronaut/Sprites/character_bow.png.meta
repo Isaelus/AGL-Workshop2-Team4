@@ -264,106 +264,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bow_0
+      name: character_bow_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 360
-        height: 300
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 108
+        y: 32
+        width: 148
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d8a2367adf90c3af0800000000000000
-      internalID: -415446080585258355
+      spriteID: f402b698d6f2840a6a3c307585b27e5b
+      internalID: -2120132952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bow_1
+      name: character_bow_1
       rect:
         serializedVersion: 2
-        x: 360
-        y: 0
-        width: 360
-        height: 300
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 537
+        y: 80
+        width: 58
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a532ca5df987c3c70800000000000000
-      internalID: 8952162787185664858
+      spriteID: 2efb3447c564848c7b1e0e17d69ddd32
+      internalID: 454502248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bow_2
+      name: character_bow_2
       rect:
         serializedVersion: 2
-        x: 720
-        y: 0
-        width: 360
-        height: 300
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 859
+        y: 32
+        width: 85
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 80e380880f939f9f0800000000000000
-      internalID: -434252183827366392
+      spriteID: fafb8259b5ef445c0838383732d82bf3
+      internalID: 2012444763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bow_3
+      name: character_bow_3
       rect:
         serializedVersion: 2
-        x: 1080
-        y: 0
-        width: 360
-        height: 300
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 1196
+        y: 37
+        width: 127
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6965917a6d114bf00800000000000000
-      internalID: 1131549020000966294
+      spriteID: 8685d4cc829384010b5f5b779aa98d4a
+      internalID: -279948359
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bow_4
+      name: character_bow_4
       rect:
         serializedVersion: 2
-        x: 1440
-        y: 0
-        width: 360
-        height: 300
-      alignment: 9
-      pivot: {x: 0.5, y: 0.1}
+        x: 1556
+        y: 32
+        width: 127
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdab7e1dce25cf090800000000000000
-      internalID: -7999427661029459236
+      spriteID: 49238824c831044de87db95a1967ade0
+      internalID: -778415809
       vertices: []
       indices: 
       edges: []
@@ -379,11 +379,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      bow_1: 8952162787185664858
-      bow_2: -434252183827366392
-      bow_4: -7999427661029459236
-      bow_0: -415446080585258355
-      bow_3: 1131549020000966294
+      character_bow_0: -2120132952
+      character_bow_3: -279948359
+      character_bow_1: 454502248
+      character_bow_2: 2012444763
+      character_bow_4: -778415809
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
