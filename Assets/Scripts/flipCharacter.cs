@@ -4,10 +4,13 @@ using UnityEngine;
 public class flipCharacter : MonoBehaviour
 {
     private bool FacingRight = true;
-    
- 
-    // Start is called before the first frame update
+    private int sortingOrder;
 
+    public SpriteRenderer gunArm;
+    public SpriteRenderer otherArm;
+
+    // Start is called before the first frame update
+    
  
     // Update is called once per frame
     void Update()
@@ -37,6 +40,17 @@ public class flipCharacter : MonoBehaviour
         tmpScale.x = - tmpScale.x;
         transform.localScale = tmpScale;
         FacingRight = !FacingRight;
+        if (FacingRight)
+        {
+            gunArm.sortingOrder = 3;
+            otherArm.sortingOrder = 1;
+        }
+        else
+        {
+            gunArm.sortingOrder = 1;
+            otherArm.sortingOrder = 3;
+        }
+        
     }
  
 }

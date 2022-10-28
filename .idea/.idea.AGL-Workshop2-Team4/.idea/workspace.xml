@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cb86fb4-b841-465c-9b21-fc609ea8fa73" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/arm_movement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/arm_movement.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/flipCharacter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/flipCharacter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/TimelineSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AGL-Workshop2-Team4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AGL-Workshop2-Team4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/COPY SPRIGHT/2D Character - Astronaut/Sprites/character_bow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/COPY SPRIGHT/2D Character - Astronaut/Sprites/character_bow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/COPY SPRIGHT/2D Character - Astronaut/Sprites/character_gun.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/COPY SPRIGHT/2D Character - Astronaut/Sprites/character_gun.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/COPY SPRIGHT/2D Character - Astronaut/Sprites/character_rifle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/COPY SPRIGHT/2D Character - Astronaut/Sprites/character_rifle.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/lazer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/lazer.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/flipCharacter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/flipCharacter.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
