@@ -8,6 +8,8 @@ TagManager:
   - Food
   - Wing
   - Ship
+  - Bullet
+  - Slime
   layers:
   - Default
   - TransparentFX
@@ -42,6 +44,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: GUI
+    uniqueID: 862866517
+    locked: 0
   - name: wall
     uniqueID: 3391283157
     locked: 0
