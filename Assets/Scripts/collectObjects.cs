@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class collectObjects : MonoBehaviour
 {
+        public SpriteRenderer changesSprite;
+        public Sprite wingedShip;
+        public Sprite fullShip;
     public float gasCollected;
    
     private bool wingCollected;
@@ -59,9 +62,14 @@ public class collectObjects : MonoBehaviour
 
 
         } else if (collectable.gameObject.CompareTag("Ship")){
+                if(wingCollected){
+
+                        changesSprite.sprite = wingedShip;
+                }
 
                 if(fullGas && wingCollected){
                         //GAME FINISHED
+                         changesSprite.sprite = fullShip;
 
                 }
 
