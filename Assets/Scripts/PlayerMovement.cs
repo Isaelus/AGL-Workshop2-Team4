@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour {
     public float dashCooldown = 1f;
     float currentDashTime;
     float currentCooldown;
+    public AudioSource audioData;
+
 
     public Rigidbody2D rb;
     public Camera cam;
@@ -19,6 +21,11 @@ public class PlayerMovement : MonoBehaviour {
     Vector2 mousePos;
 
     // Update is called once per frame
+
+    void Start()
+    {
+        audioData.GetComponent<AudioSource>();
+    }
     void Update() {
         moveDir.x = Input.GetAxisRaw("Horizontal");
         moveDir.y = Input.GetAxisRaw("Vertical");
@@ -43,6 +50,7 @@ public class PlayerMovement : MonoBehaviour {
         canDash = false;
         canMove = false;
         currentDashTime = dashTime;
+        audioData.Play();
         while (currentDashTime > 0f) {
             currentDashTime -= Time.deltaTime;
             
