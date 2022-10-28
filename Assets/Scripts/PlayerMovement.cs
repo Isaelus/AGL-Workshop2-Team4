@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour {
     public const float MOVE_SPEED = 5f;
     bool canDash = true;
     bool canMove = true;
-    public float dashSpeed = 10f;
+    public float dashSpeed = 15f;
     public float dashTime = 0.25f;
     public float dashCooldown = 1f;
     float currentDashTime;
